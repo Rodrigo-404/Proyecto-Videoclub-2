@@ -1,0 +1,14 @@
+services:
+  videoclub2:
+    build: ../backend/
+    container_name: videoclub2
+    image: videoclub2_php:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ../backend/videoclub2:/var/www/html/videoclub2
+    environment:
+      - XDEBUG_MODE=debug
+      - PHP_IDE_CONFIG=serverName=localhost
+    networks:
+      - videoclub2_php
