@@ -1,5 +1,5 @@
 <?php
-namespace app\models;
+namespace models;
 
 class CintaVideo extends Soporte
 {

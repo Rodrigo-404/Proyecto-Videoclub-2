@@ -1,8 +1,8 @@
 <?php
-namespace app\utils;
+namespace utils;
 
-use app\enums\ReturnMode;
-use app\models\Soporte;
+use enums\ReturnMode;
+use models\Soporte;
 
 class SoporteUtils
 {

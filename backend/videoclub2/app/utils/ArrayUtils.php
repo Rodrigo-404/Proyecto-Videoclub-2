@@ -1,7 +1,7 @@
 <?php
-namespace app\utils;
+namespace utils;
 
-use app\enums\ReturnMode;
+use enums\ReturnMode;
 
 class ArrayUtils
 {

@@ -1,8 +1,8 @@
 <?php
-namespace app\models;
+namespace models;
 
-use app\utils\ClienteUtils;
-use app\utils\SoporteUtils;
+use utils\ClienteUtils;
+use utils\SoporteUtils;
 
 class Videoclub
 {

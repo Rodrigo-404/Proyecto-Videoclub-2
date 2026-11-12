@@ -1,7 +1,7 @@
 <?php
 include "autoload.php";
 
-use app\models\Videoclub;
+use models\Videoclub;
 
 $vc = new Videoclub("Severo 8A");
 //voy a incluir unos cuantos soportes de prueba

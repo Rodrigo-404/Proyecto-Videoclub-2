@@ -1,6 +1,5 @@
 <?php
-
-namespace app\enums;
+namespace enums;
 
 enum ReturnMode: string
 {

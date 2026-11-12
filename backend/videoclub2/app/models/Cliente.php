@@ -1,8 +1,8 @@
 <?php
-namespace app\models;
+namespace models;
 
-use app\utils\ArrayUtils;
-use app\utils\SoporteUtils;
+use utils\ArrayUtils;
+use utils\SoporteUtils;
 
 class Cliente
 {

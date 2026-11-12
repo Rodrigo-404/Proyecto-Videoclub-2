@@ -1,7 +1,7 @@
 <?php
-namespace app\models;
+namespace models;
 
-use app\interfaces\Resumible;
+use interfaces\Resumible;
 
 abstract class Soporte implements Resumible
 {

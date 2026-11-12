@@ -1,8 +1,9 @@
 <?php
-namespace app\utils;
+namespace utils;
 
-use app\enums\ReturnMode;
-use app\models\Cliente;
+use enums\ReturnMode;
+use models\Cliente;
+use utils\ArrayUtils;
 
 class ClienteUtils
 {

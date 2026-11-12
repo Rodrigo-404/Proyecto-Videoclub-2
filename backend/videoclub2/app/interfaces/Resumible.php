@@ -1,6 +1,5 @@
 <?php
-
-namespace app\interfaces;
+namespace interfaces;
 
 interface Resumible
 {

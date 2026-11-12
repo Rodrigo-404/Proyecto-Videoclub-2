@@ -1,12 +1,14 @@
 <?php
-
-spl_autoload_register( function ($nombreClase ) {
-    //include_once $nombreClase . ".php";
-    //include_once "app/" . $nombreClase . ".php";
-
-    // Reemplaza las barras invertidas del namespace por barras de directorio
-    $ruta = str_replace('\\', '/', $nombreClase);
-
-    // Incluye el archivo con la ruta corregida
-    include_once $ruta . ".php";
+spl_autoload_register(function ($class) {
+    $prefix = '';
+    $baseDir = __DIR__ . '/app/';
+    $len = strlen($prefix);
+    if (strncmp($prefix, $class, $len) !== 0) {
+        return;
+    }
+    $relativeClass = substr($class, $len);
+    $file = $baseDir . str_replace('\\', '/', $relativeClass) . '.php';
+    if (file_exists($file)) {
+        require $file;
+    }
 });
