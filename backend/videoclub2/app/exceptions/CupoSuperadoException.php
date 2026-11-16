@@ -1,7 +1,7 @@
 <?php
 namespace exceptions;
 
-class CupoYaSuperadoException extends VideoclubException
+class CupoSuperadoException extends VideoclubException
 {
 
 }

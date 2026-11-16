@@ -18,15 +18,15 @@ echo $vc->listarProductos() . "</br>";
 //voy a crear algunos socios
 $vc->incluirSocio("Amancio Ortega");
 $vc->incluirSocio("Pablo Picasso", 2);
-$vc->alquilaSocioProducto(1,2);
-$vc->alquilaSocioProducto(1,3);
+$vc->alquilarSocioProducto(1,2);
+$vc->alquilarSocioProducto(1,3);
 //alquilo otra vez el soporte 2 al socio 1.
 // no debe dejarme porque ya lo tiene alquilado
-$vc->alquilaSocioProducto(1,2);
+$vc->alquilarSocioProducto(1,2);
 //alquilo el soporte 6 al socio 1.
-$vc->alquilaSocioProducto(1,6);
+$vc->alquilarSocioProducto(1,6);
 //se alquila el soporte 5 al socio 1.
 //no se puede porque el socio 1 tiene 3 alquileres como máximo
-$vc->alquilaSocioProducto(1,5);
+$vc->alquilarSocioProducto(1,5);
 //listo los socios
 echo $vc->listarSocios() . "</br>";
