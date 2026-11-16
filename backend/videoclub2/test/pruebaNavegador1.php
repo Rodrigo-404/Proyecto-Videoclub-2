@@ -1,10 +1,10 @@
 <?php
 include "../autoload.php";
 
-use app\models\CintaVideo;
-use app\models\Dvd;
-use app\models\Juego;
-use app\models\Soporte;
+use models\CintaVideo;
+use models\Dvd;
+use models\Juego;
+use models\Soporte;
 
 $soporte1 = new Soporte("Tenet", 22, 3);
 echo "<strong>" . $soporte1->titulo . "</strong>";

@@ -19,6 +19,7 @@ abstract class Soporte implements Resumible
     public string $titulo;
     protected int $numero;
     private float $precio;
+    protected bool $alquilado = false;
 
     public function __construct(string $titulo, int $numero, float $precio)
     {
@@ -39,6 +40,16 @@ abstract class Soporte implements Resumible
     public function getPrecio(): float
     {
         return $this->precio;
+    }
+
+    public function isAlquilado(): bool
+    {
+        return $this->alquilado;
+    }
+
+    public function setAlquilado(bool $alquilado): void
+    {
+        $this->alquilado = $alquilado;
     }
 
     #[\Override]

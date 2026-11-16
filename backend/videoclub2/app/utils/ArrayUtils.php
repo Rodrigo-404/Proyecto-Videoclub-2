@@ -59,4 +59,30 @@ class ArrayUtils
         return $filteredElements;
     }
 
+    /**
+     * Devuelve si hay alguna coincidencia en el array dada una condición.
+     * @param array $array
+     * @param callable $callback
+     * @return bool
+     */
+    public static function any(array $array, callable $callback): bool
+    {
+        $filteredElements = array_filter($array, $callback);
+
+        return count($filteredElements) > 0;
+    }
+
+    /**
+     * Devuelve si todos los elementos del array cumplen con la condición.
+     * @param array $array
+     * @param callable $callback
+     * @return bool
+     */
+    public static function all(array $array, callable $callback): bool
+    {
+        $filteredElements = array_filter($array, $callback);
+
+        return count($filteredElements) === count($array);
+    }
+
 }
