@@ -12,7 +12,7 @@ class SoporteUtils
      * @param int $numSoporte
      * @return Soporte|null
      */
-    public static function getSoportePorNumSoporte(array $soportes, int $numSoporte): ?Soporte
+    public static function getSoporteByNumSoporte(array $soportes, int $numSoporte): ?Soporte
     {
         $result = ArrayUtils::searchByCondition(
             $soportes,
